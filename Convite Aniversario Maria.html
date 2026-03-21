@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite - Aniversário da Maria Alice</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(180deg, #ffe4f1, #fff);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffffcc;
+            border-radius: 20px;
+            padding: 25px 20px 35px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            border: 2px solid #ff9ac4;
+        }
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff9ac4;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            margin-top: 10px;
+        }
+        h1 {
+            color: #e71d73;
+            font-size: 2.2rem;
+            margin: 15px 0 5px;
+        }
+        h2 {
+            color: #d31660;
+            font-size: 1.4rem;
+            margin-top: 0;
+        }
+        p {
+            color: #444;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+        .monkey-banner {
+            margin-top: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .subplace {
+            font-size: 1.05rem;
+            color: #b45706;
+            font-weight: 600;
+        }
+        .monkey-icon {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .details {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 15px;
+            background: #fff7d6;
+            border: 1px dashed #ffc35a;
+        }
+        .details p {
+            margin: 4px 0;
+            font-weight: 600;
+            color: #b45606;
+        }
+        .buttons {
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .btn-primary {
+            background-color: #ff7fb0;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #e61f70;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+        .btn-map {
+            background-color: #4caf50;
+            color: #fff;
+        }
+        .btn-map:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px 12px 25px;
+            }
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.2rem; }
+            .photo {
+                width: 150px;
+                height: 150px;
+            }
+            .btn {
+                width: 100%;
+                max-width: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- FOTO DA MARIA ALICE -->
+        <img
+            src="https://i.imgur.com/0Sh44vA.jpeg"
+            alt="Maria Alice"
+            class="photo"
+style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;"
+        >
+
+        <h1>Maria Alice
+        <h2>3 Anos💕</h2>
+
+        <!-- TEXTO + ÍCONE DO MICO LEÃO FESTAS -->
+        <div class="monkey-banner">
+            <span class="subplace">Aqui no Mico Leão Festas</span>
+            <img
+                src="https://i.imgur.com/2XZfBHF.png"
+                alt="Mico Leão Festas"
+                class="monkey-icon"
+            >
+        </div>
+
+        <p>
+            Meu Aniversário ja esta aí, e você esta convidado para um dia de muita diversão.<br>
+            Venha curtir comigo e participar desse momento tão especial!
+        </p>
+
+        <div class="details">
+            <p>📅 Data: <strong>08 de abril</strong></p>
+            <p>⏰ Horário: <strong>19h30</strong></p>
+            <p>📍 Local: <strong>Rua Sepetiba, 146 – Vila Ipanema, Ipatinga – MG</strong></p>
+        </div>
+
+        <p>Por favor, confirme sua presença para nos ajudar na organização da festa.</p>
+
+        <div class="buttons">
+            <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeLf0uEL0SjJ65qIgUTN7NUVLHDveDw6HMadqBRmSsZBQFYHQ/viewform?usp=publish-editor" target="_blank">
+    Confirmar presença
+</a>
+
+            <!-- BOTÃO VER NO MAPA (GOOGLE MAPS) -->
+            <a class="btn btn-map"
+               href="https://www.google.com/maps/search/?api=1&query=Rua+Sepetiba,+146,+Vila+Ipanema,+Ipatinga+-+MG"
+               target="_blank">
+                Ver no mapa
+            </a>
+        </div>
+
+        <p class="footer">
+            Obrigad@ pelo carinho! Estamos ansiosos para comemorar com você. 🎂
+        </p>
+    </div>
+</body>
+</html>
